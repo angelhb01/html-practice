@@ -1,7 +1,11 @@
 
 /* the body element has a background color: black */
 body {
-    background-color: black;
+    background-image: url('../images/space-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* every element has a font-family of monospace and the color white */
@@ -24,6 +28,9 @@ body {
 #flex-container {
     display: flex;
     height: 40rem;
+    background-color: rgba(114, 114, 114, 0.178);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* the info id has another flex box to make a gap between the facts and the introduction text */
@@ -32,7 +39,6 @@ body {
     flex-direction: column;
     gap: 5rem;
     padding: 2rem;
-    background-color: red;
     font-size: 1.2rem;
 }
 
@@ -46,7 +52,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
 }
 #image img {
     max-width: 70%;
@@ -62,4 +67,16 @@ body {
 .fact {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.3rem;
+}
+#footer {
+    text-align: center;
+}
+
+/* Made the content responsive to the screen size */
+@media screen and (max-width: 768px) {
+    #flex-container {
+        height: 100%;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+    }
 }
