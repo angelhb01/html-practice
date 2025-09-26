@@ -80,4 +80,7 @@ body {
         flex-wrap: wrap;
         padding-top: 2rem;
     }
+    .content {
+        font-size: 1.6rem;
+    }
 }
