@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History of Mars</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-    <!---- Header  ---->
-    <header id="title">
-        <h1>History of Mars</h1>
-    </header>
 
-    <main id="main-content">
-        <div id="flex-container">
+    <div class="container">
+
+        <!---- Header  ---->
+        <header class="row text-center mb-5 mt-5">
+            <h1>History of Mars</h1>
+        </header>
+
+        <div class="row mb-3 section1 d-flex overflow-auto">
+
             <!--- 1st Section  --->
-            <!--- Section has a paragraph tag that shows the introduction of the page --->
-            <section id="image">
-                <img src="/images/mars_info.png" alt="mars_info">
+            <section id="image" class="col col-md-6 col-sm-12 col-12 mt-5 mt-md-0 d-flex justify-content-center align-items-center">
                 <!--- Image links to the path of the mars_info.png with an alt of mars_info and width of 40% of the parent tag ---->
+                <img src="/images/mars_info.png" alt="mars_info">
             </section>
 
             <!--- 2nd Section --->
-            <!--- Section contains a heading and an ordered list containing some history behind Mars  --->
-            <section id="info">
+            <section class="col col-md-6 col-sm-12 col-12 pt-5 gap-2 p-5">
                 <div>
-                    <h1 class="sub-head">History</h1>
+                    <h1 class="fs-2">History</h1>
                     <p class="content">Mars has a fascinating history that goes on for billions of years. As of today Mars is the most studied planet.
                         From ancient civilizations studying the "big red planet" to plans on having humans live on Mars. As the year goes on,
                         technology continues to evolve to make this dream come true.
                     </p>
                 </div>
-                <div id="facts">
-                    <h1 class="sub-head">Here is some of the history behind Mars</h1>
+
+                <div class="mt-5">
+                    <h1 class="fs-2">Here is some of the history behind Mars</h1>
                     <ol>
                         <li class="fact">Galileo was the first person to discover it with a telescope</li>
                         <li class="fact">NASA's Inguenuity Mars Helicopter was the first to fly over Mars.</li>
@@ -44,13 +47,14 @@
         </div>
 
         <!--- Footer contains an anchor tag that goes back to the home page --->
-        <section id="footer">
+        <section class="row text-center">
             <footer>
                 <a href="/index.html">Go back</a>
             </footer>
 
         </section>
-    </main>
+
+    </div>
     
 </body>
 </html>
