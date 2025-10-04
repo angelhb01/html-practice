@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facts About Mars</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
 
-    <!---- Header  ---->
-    <header id="title">
-        <h1>Facts About Mars</h1>
-        <p class="content">
-            This site talks about the interesting facts about Mars such as the history
-            and information behind it.
-        </p>
-    </header>
+    <div class="container">
 
-    <main id="main-content">
-        <!--- 1st Section  --->
-        <div id="flex-container">
-            <section id="image">
+        <!---- Header  ---->
+        <header class="row text-center mb-5 mt-5">
+            <h1>Facts About Mars</h1>
+            <p class="content">
+                This site talks about the interesting facts about Mars such as the history
+                and information behind it.
+            </p>
+        </header>
+
+        <div class="row mb-3 section1 d-flex overflow-auto">
+
+            <!--- 1st Section  --->
+            <section id="image" class="col d-flex justify-content-center align-items-center">
                 <!--- image links to the path of the image with alt of mars and width taking up 35% of the parent tag --->
                 <img src="/images/mars.png" alt="mars">
             </section>
 
             <!--- 2nd Section --->
-            <!--- contains facts about nars in an unordered list tag --->
-            <!--  Added id for a unique element such as the info section. Also added two classes for the sub-head and content -->
-            <section id="info">
+            <section class="col pt-5 gap-2 p-5">
                 <div>
-                    <h1 class="sub-head">Mars:</h1>
+                    <h1 class="fs-2">Mars:</h1>
                     <p class="content">From the solar system, Mars is the fourth planet from the Sun. This planet is also known as the Red Planet
                         because of its red appearance. The land of mars looks nothing like Earth. Instead, it has a more dessert look
                         rather than a more greenish look similar to Earth.
@@ -39,7 +40,7 @@
 
                 <!--- Added classes to change their font size and size -->
                 <div id="facts">
-                    <h1 class="sub-head">Facts About Mars:</h1>
+                    <h1 class="fs-2">Facts About Mars:</h1>
                     <p class="content">Here are some interesting facts about Mars!</p>
                     <ul>
                         <li class="fact">Has two small moons</li>
@@ -53,11 +54,13 @@
         </div>
 
         <!--- A footer that leads to the next page --->
-        <section id="footer">
+
+        <section class="row text-center">
             <footer>
                 Learn the history of Mars <a href="/page2.html">here!</a>
             </footer>
         </section>
-    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
